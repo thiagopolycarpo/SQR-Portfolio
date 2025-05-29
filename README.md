@@ -1,54 +1,30 @@
-# React + TypeScript + Vite
+# SQR - Quality and Traceability System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project developed as part of a **recruitment process**, divided into back-end and front-end challenges.
 
-Currently, two official plugins are available:
+The system was designed to simulate production control in an industrial environment, focusing on record submission, traceability, and performance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Components
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Module | Description |
+|--------|-------------|
+| [SQR-WindowsForm](https://github.com/thiagopolycarpo/SQR-WindowsForm) | Legacy prototype in C# Windows Forms |
+| [SQR-Backend](https://github.com/thiagopolycarpo/SQR-Backend) | RESTful API with Express, Swagger, Docker |
+| [SQR-Frontend-Angular](https://github.com/thiagopolycarpo/SQR-Frontend-Angular) | Modern interface with Angular 16 |
+| [SQR-Frontend-React](https://github.com/thiagopolycarpo/SQR-Frontend-React) | Modern interface with React + Vite + TS |
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Implemented Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Registration and query of production orders
+- Production record submission with validations and traceability
+- Automatic calculation of cycle time
+- API with Swagger documentation
+- Front-end with asynchronous communication
+- Docker for easy local testing
+- Postman collections for testing
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
