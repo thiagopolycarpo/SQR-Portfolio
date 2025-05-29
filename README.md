@@ -12,8 +12,8 @@ The system was designed to simulate production control in an industrial environm
 |--------|-------------|
 | [SQR-WindowsForm](https://github.com/thiagopolycarpo/SQR-WindowsForm) | Legacy prototype in C# Windows Forms |
 | [SQR-Backend](https://github.com/thiagopolycarpo/SQR-Backend) | RESTful API with Express, Swagger, Docker |
-| [SQR-Frontend-Angular](https://github.com/thiagopolycarpo/SQR-Frontend-Angular) | Modern interface with Angular 16 |
-| [SQR-Frontend-React](https://github.com/thiagopolycarpo/SQR-Frontend-React) | Modern interface with React + Vite + TS |
+| [SQR-Frontend-Angular](https://github.com/thiagopolycarpo/SQR-Frontend-Angular) | Modern interface with Angular 16 + TS |
+| [SQR-Frontend-React](https://github.com/thiagopolycarpo/SQR-Frontend-React) | Modern interface with React + Vite + JS |
 
 ---
 
