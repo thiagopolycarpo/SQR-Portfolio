@@ -96,7 +96,7 @@ export default function PortfolioPage() {
             Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato.
           </p>
           <Button asChild>
-            <a href="mailto:seu-email@example.com">Enviar Email</a>
+            <a href="mailto:polycarpo.thiago@gmail.com">Enviar Email</a>
           </Button>
         </section>
       </section>
